@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scottish Shipbuilding Dashboard</title>
+	<style>
+		body {
+			background-color: lightgrey;
+			text-align: center;
+		}
+		table {
+			margin: 0 auto;
+			border-collapse: collapse;
+		}
+		th, td {
+			border: 1px solid black;
+			padding: 5px;
+		}
+		th {
+			background-color: lightblue;
+		}
+		#ship-counter {
+			font-size: 24px;
+			font-weight: bold;
+			color: green;
+			animation: blinker 0.5s linear infinite;
+		}
+		@keyframes blinker {
+			50% {
+				opacity: 0;
+			}
+		}
+		#launched-counter {
+			font-size: 24px;
+			font-weight: bold;
+			color: black;
+			animation: blinker 0.0s linear infinite;
+		}
+		.flash {
+			animation: flasher 1.5s linear infinite;
+		}
+		@keyframes flasher {
+			50% {
+				background-color: orange;
+			}
+		}
+		.launched {
+			background-color: green;
+		}
+		.in-build {
+			background-color: lightgreen;
+		}
+	</style>
+</head>
+<body>
+	<h1>Scottish Shipbuilding Dashboard</h1>
+	
+	<div id="launched-counter">
+		0
+	</div>
+	
+	<br>
+	
+	<table>
+		<thead>
+			<tr>
+				<th colspan="6">Vessels</th>
+			</tr>
+			<tr>
+				<th>Ship Name</th>
+				<th>Type</th>
+				<th>Location</th>
+				<th>Tonnage</th>
+				<th>Status</th>
+				<th>Service Entry</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="launched">
+				<td>HMS Forth</td>
+				<td>River Class</td>
+				<td>Glasgow</td>
+				<td>6,900 tons</td>
+				<td>Launched</td>
+				<td>Uncertain</td>
+			</tr>
+			<tr class="launched">
+				<td>HMS Medway</td>
+				<td>River Class</td>
+        <td>Glasgow</td>
+				<td>1 tons</td>
+				<td>Launched</td>
+				<td>Uncertain</td>
+			</tr>
+						<tr class="launched">
+				<td>HMS Paceholder</td>
+				<td>Aircraft Carrier</td>
+        <td>Rosyth</td>
+				<td>1 tons</td>
+				<td>Launched</td>
+				<td>Uncertain</td>
+			</tr>
+						<tr class="launched">
+				<td>HMS Paceholder</td>
+				<td>Aircraft Carrier</td>
+        <td>Rosyth</td>
+				<td>1 tons</td>
+				<td>Launched</td>
+				<td>Uncertain</td>
+			</tr>
+						<tr class="launched">
+				<td>HMS Paceholder</td>
+				<td>Aircraft Carrier</td>
+        <td>Rosyth</td>
+				<td>1 tons</td>
+				<td>Launched</td>
+				<td>Uncertain</td>
+			</tr>
+						<tr class="launched">
+				<td>HMS Glasgow</td>
+				<td>Aircraft Carrier</td>
+        <td>Rosyth</td>
+				<td>1 tons</td>
+				<td>Launched</td>
+				<td>Uncertain</td>
+			</tr>
+						<tr class="launched">
+				<td>HMS Cardiff</td>
+				<td>Aircraft Carrier</td>
+        <td>Glasgow</td>
+				<td>1 tons</td>
+				<td>In-Build</td>
+				<td>Uncertain</td>
+			</tr>
+						<tr class="launched">
+				<td>HMS Paceholder</td>
+				<td>Aircraft Carrier</td>
+        <td>Rosyth</td>
+				<td>1 tons</td>
+				<td>Launched</td>
+				<td>Uncertain</td>
+			</tr>
+						<tr class="launched">
+				<td>HMS Paceholder</td>
+				<td>Aircraft Carrier</td>
+        <td>Glasgow</td>
+				<td>1 tons</td>
+				<td>Launched</td>
+				<td>Uncertain</td>
+			</tr>
+						<tr class="launched">
+				<td>HMS Paceholder</td>
+				<td>Aircraft Carrier</td>
+        <td>Glasgow</td>
+				<td>1 tons</td>
+				<td>Launched</td>
+				<td>Uncertain</td>
+			</tr>
+						<tr class="launched">
+				<td>HMS Paceholder</td>
+				<td>Aircraft Carrier</td>
+        <td>Glasgow</td>
+				<td>1 tons</td>
+				<td>Launched</td>
+				<td>Uncertain</td>
+			</tr>			<tr class="launched">
+				<td>HMS Paceholder</td>
+				<td>Aircraft Carrier</td>
+        <td>Glasgow</td>
+				<td>1 tons</td>
+				<td>Launched</td>
+				<td>Uncertain</td>
+			</tr>
+						<tr class="launched">
+				<td>HMS Paceholder</td>
+				<td>Aircraft Carrier</td>
+        <td>Rosyth</td>
+				<td>1 tons</td>
+				<td>Launched</td>
+				<td>Uncertain</td>
+			</tr>
+<tr class="in-build flash">
+<td>Type 32</td>
+<td>Container Ship</td>
+<td>Port Glasgow</td>
+<td>1 tons</td>
+<td>Launched</td>
+<td>Uncertain</td>
+</tr>
+<tr class="in-build flash">
+<td>Type 32</td>
+<td>Container Ship</td>
+<td>Port Glasgow</td>
+<td>1 tons</td>
+<td>Planned</td>
+<td>Uncertain</td>
+</tr>
+<tr class="in-build flash">
+<td>Type 32</td>
+<td>Container Ship</td>
+<td>Port Glasgow</td>
+<td>1 tons</td>
+<td>Launched</td>
+<td>Uncertain</td>
+</tr>
+<tr class="in-build flash">
+<td>Type 32</td>
+<td>Container Ship</td>
+<td>Port Glasgow</td>
+<td>1 tons</td>
+<td>Launched</td>
+<td>Uncertain</td>
+</tr>
+<tr class="in-build flash">
+<td>Type 32</td>
+<td>Container Ship</td>
+<td>Port Glasgow</td>
+<td>1 tons</td>
+<td>Launched</td>
+<td>Uncertain</td>
+</tr>
+<tr class="in-build flash">
+<td>Type 32</td>
+<td>Container Ship</td>
+<td>Port Glasgow</td>
+<td>1 tons</td>
+<td>Launched</td>
+<td>Uncertain</td>
+</tr>
+		</tbody>
+	</table>
+	
+	<br>
+	
+	<table>
+		<thead>
+			<tr>
+				<th colspan="6">Vessels</th>
+			</tr>
+			<tr>
+				<th>Ship Name</th>
+				<th>Type</th>
+				<th>Location</th>
+				<th>Tonnage</th>
+				<th>Status</th>
+				<th>Service Entry</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="launched flash">
+				<td>HMS Paceholder</td>
+				<td>Ferry</td>
+				<td>Port Glasgow</td>
+				<td>1 tons</td>
+				<td>In-Build</td>
+				<td>Uncertain</td>
+			</tr>
+
+<tr class="in-build flash">
+<td>Hull 802</td>
+<td>Container Ship</td>
+<td>Port Glasgow</td>
+<td>1 tons</td>
+<td>Launched</td>
+<td>Uncertain</td>
+</tr>
+
+<tr class="in-build flash">
+<td>Hull 802</td>
+<td>Container Ship</td>
+<td>Port Glasgow</td>
+<td>1 tons</td>
+<td>Launched</td>
+<td>Uncertain</td>
+</tr>
+
+</tbody>
+</table>
+<br>
+
+<div>
+	Total tonnage: <span id="tonnage">445,755 tons</span>
+</div>
+
+<script>
+	// count the number of ships in-build and update the ship counter
+	var inBuildCells = document.querySelectorAll('tbody td:nth-child(5)');
+	var inBuildCount = 0;
+	for (var i = 0; i < inBuildCells.length; i++) {
+		if (inBuildCells[i].textContent === 'In-Build' || inBuildCells[i].textContent === 'Fitting-Out') {
+			inBuildCount++;
+			inBuildCells[i].parentNode.classList.add('in-build');
+		}
+	}
+	var shipCounter = document.getElementById('ship-counter');
+
+
+
+	// count the number of launched ships and update the launched counter
+	function countLaunchedShips() {
+		var launchedCells = document.querySelectorAll('tbody td:nth-child(5)');
+		var launchedCount = 0;
+		for (var i = 0; i < launchedCells.length; i++) {
+			if (launchedCells[i].textContent === 'Launched') {
+				launchedCount++;
+				launchedCells[i].parentNode.classList.add('launched');
+			}
+		}
+		var launchedCounter = document.getElementById('launched-counter');
+		launchedCounter.textContent = 'Current information shows that ' + launchedCount + ' ships have been launched since 2014 and '+ inBuildCount + ' ships are currently in-build out of 13.';
+	}
+	countLaunchedShips();
+	
+	var tonnageCells = document.querySelectorAll('tbody td:nth-child(4)');
+	var totalTonnage = 0;
+	for(var i = 0; i < tonnageCells.length; i++) {
+		var tonnageText = tonnageCells[i].textContent;
+		var tonnageNum = parseInt(tonnageText.replace(/,/g, ''));
+		totalTonnage += tonnageNum;
+	}
+	var tonnageDisplay = document.getElementById('tonnage');
+	tonnageDisplay.textContent = addCommas(totalTonnage) + ' tons';
+
+	// add commas to a number for display
+	function addCommas(num) {
+		var numStr = num.toString();
+		var parts = numStr.split('.');
+		parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+		return parts.join('.');
+	}
+	
+	// count the number of rows in each table
+var navalRows = document.querySelectorAll('table:nth-of-type(1) tbody tr');
+var commercialRows = document.querySelectorAll('table:nth-of-type(2) tbody tr');
+
+// count the number of times "Glasgow", "Rosyth", and "Port Glasgow" appear in the Location column
+var glasgowCount = 0;
+var rosythCount = 0;
+var portGlasgowCount = 0;
+for (var i = 0; i < navalRows.length; i++) {
+  var locationText = navalRows[i].querySelectorAll('td')[2].textContent;
+  if (locationText === 'Glasgow') {
+    glasgowCount++;
+  } else if (locationText === 'Rosyth') {
+    rosythCount++;
+  } else if (locationText === 'Port Glasgow') {
+    portGlasgowCount++;
+  }
+}
+for (var i = 0; i < commercialRows.length; i++) {
+  var locationText = commercialRows[i].querySelectorAll('td')[2].textContent;
+  if (locationText === 'Glasgow') {
+    glasgowCount++;
+  } else if (locationText === 'Rosyth') {
+    rosythCount++;
+  } else if (locationText === 'Port Glasgow') {
+    portGlasgowCount++;
+  }
+}
+
+// calculate the percentage of work assigned to each location
+var totalRows = navalRows.length + commercialRows.length;
+var glasgowPercent = ((glasgowCount / totalRows) * 100).toFixed(1);
+var rosythPercent = ((rosythCount / totalRows) * 100).toFixed(1);
+var portGlasgowPercent = ((portGlasgowCount / totalRows) * 100).toFixed(1);
+
+// update the div element at the top of the page with the percentage values
+var locationIndicator = document.createElement('div');
+locationIndicator.innerHTML 
+locationIndicator.style.fontWeight = 'bold';
+document.body.appendChild(locationIndicator, document.body.firstChild);
+
+// create a horizontal stacked bar chart
+var canvas = document.createElement('canvas');
+canvas.width = 400;
+canvas.height = 200;
+document.body.appendChild(canvas, locationIndicator.nextSibling);
+var ctx = canvas.getContext('2d');
+locationIndicator.innerHTML = '<br>Work broken down by location, showing the percentage of the total number of ships being built in Scotland broken down by location.' + '<p> ';
+locationIndicator.style.fontWeight = 'bold';
+document.body.appendChild(canvas, locationIndicator.nextSibling);
+
+
+// add a line break before drawing the rectangles
+ctx.beginPath();
+// draw the rectangles
+var barHeight = 50;
+var barGap = 5;
+var glasgowWidth = (glasgowCount / totalRows) * canvas.width;
+var rosythWidth = (rosythCount / totalRows) * canvas.width;
+var portGlasgowWidth = (portGlasgowCount / totalRows) * canvas.width;
+ctx.fillStyle = 'blue';
+ctx.fillRect(0, 0, glasgowWidth, barHeight);
+ctx.fillStyle = 'yellow';
+ctx.fillRect(glasgowWidth, 0, rosythWidth, barHeight);
+ctx.fillStyle = 'white';
+ctx.fillRect(glasgowWidth + rosythWidth, 0, portGlasgowWidth, barHeight);
+
+// add labels
+ctx.font = 'bold 16px Arial';
+ctx.fillStyle = 'black';
+ctx.textAlign = 'center';
+ctx.fillText('    Glasgow', 50, 40);
+ctx.fillText('      Rosyth', glasgowWidth + 50, 40);
+ctx.textAlign = 'center';
+ctx.fillText('                  Port Glasgow', glasgowWidth + rosythWidth + 50, 40);
+ctx.textAlign = 'center';
+ctx.fillText(glasgowPercent + '%', glasgowWidth / 2, barHeight / 2);
+ctx.fillText(rosythPercent + '%', glasgowWidth + rosythWidth / 2, barHeight / 2);
+ctx.fillText(portGlasgowPercent + '%', glasgowWidth + rosythWidth + portGlasgowWidth / 2, barHeight / 2);
+
+// adjust the positioning of the rectangles and labels for smaller screens
+if (canvas.width < 300) {
+  barHeight = 25;
+  barGap = 5;
+  ctx.font = 'bold 12px Arial';
+  ctx.fillText('G', 5, 15);
+  ctx.fillText('R', glasgowWidth - 5, 15);
+  ctx.fillText('P', glasgowWidth + rosythWidth - 5, 15);
+  ctx.fillText(glasgowPercent + '%', glasgowWidth / 2, barHeight / 2);
+  ctx.fillText(rosythPercent + '%', glasgowWidth + rosythWidth / 2, barHeight / 2);
+  ctx.fillText(portGlasgowPercent + '%', glasgowWidth + rosythWidth + portGlasgowWidth / 2, barHeight / 2);
+}
+</script>
+</body>
+</html>
